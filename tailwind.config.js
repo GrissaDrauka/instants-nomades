@@ -4,8 +4,21 @@ export default {
         "./src/**/*.{html,ts}"
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                sable: "#E9DCC7",
+                terracotta: "#D4A276",
+                beige: "#C6B09D",
+                "brun-leger": "#A68C6D",
+                "vert-sauge": "#6E7B58",
+                blanc: "#ffffff",
+            },
+            fontFamily: {
+                serif: ['"Cormorant Garamond"', 'serif'],
+                sans: ['Lato', 'sans-serif'],
+            },
+        },
     },
     plugins: [],
 }
-// This is a Tailwind CSS configuration file that specifies the content files to scan for class names and extends the default theme.
+// This Tailwind CSS configuration file extends the default theme with custom colors and font families.
