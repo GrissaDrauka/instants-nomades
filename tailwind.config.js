@@ -14,7 +14,8 @@ export default {
                 blanc: "#ffffff",
             },
             fontFamily: {
-                serif: ['"Cormorant Garamond"', 'serif'],
+                serif: ['Cormorant Garamond', 'serif'],
+                display: ['Playfair Display', 'serif'],
                 sans: ['Lato', 'sans-serif'],
             },
         },

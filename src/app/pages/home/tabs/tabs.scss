@@ -1,0 +1,19 @@
+.tabs-section {
+    @apply bg-sable py-[30px] border-b border-beige;
+}
+
+.tabs {
+    @apply flex justify-center gap-[20px];
+}
+
+.tab {
+    @apply bg-transparent border-none font-display text-[24px] px-[20px] py-[10px] cursor-pointer border-b-[3px] border-transparent text-vert-sauge transition-all duration-300;
+}
+
+.tab:hover {
+    @apply text-terracotta;
+}
+
+.tab.active {
+    @apply border-b-[3px] border-vert-sauge text-vert-sauge;
+}

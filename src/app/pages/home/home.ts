@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { Hero } from './hero/hero';
+import { Tabs } from './tabs/tabs';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [Hero, Tabs],
   templateUrl: './home.html',
-  styleUrl: './home.scss'
+  styleUrls: ['./home.scss']
 })
 export class Home {
 
