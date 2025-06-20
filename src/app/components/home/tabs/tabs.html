@@ -1,7 +1,15 @@
 <section class="tabs-section">
     <div class="tabs">
-        <button class="tab">Programme</button>
-        <button class="tab">Bon à savoir</button>
-        <button class="tab">Inclus</button>
+        <button (click)="setTab('programme')" class="tab">Programme</button>
+        <button (click)="setTab('bonasavoir')" class="tab">Bon à savoir</button>
+        <button (click)="setTab('inclus')" class="tab">Inclus</button>
     </div>
 </section>
+
+@if (activeTab() === 'programme') {
+<app-programme />
+} @else if (activeTab() === 'bonasavoir') {
+<app-bon-a-savoir />
+} @else {
+<app-inclus />
+}
