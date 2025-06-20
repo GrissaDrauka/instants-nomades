@@ -1,9 +1,9 @@
 <section class="bg-beige py-[60px]">
     <div class="max-w-screen-xl mx-auto px-4">
         <h2 class="font-display font-bold text-[36px] text-vert-sauge">Les étapes du voyage</h2>
-        <p class="section-intro max-w-[700px] mb-[40px]">
-            Voici le détail jour par jour de votre séjour dans le désert. Chaque journée est pensée pour favoriser
-            la reconnexion à soi-même et au monde naturel.
+        <p class="section-intro max-w-[700px] mb-[40px] mt-[20px]">
+            Jour après jour, ce voyage vous emmène au cœur du désert pour retrouver l’essentiel.
+            Chaque étape a été pensée pour vous reconnecter à la nature, au silence… et à vous-même.
         </p>
 
         <div class="grid gap-[30px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
@@ -14,7 +14,23 @@
                 <div class="p-[20px]">
                     <div class="font-bold text-terracotta mb-[5px]">Jour 1</div>
                     <h3 class="font-display font-bold text-[20px] my-[10px]">Arrivée et installation</h3>
-                    <a href="#" class="text-vert-sauge font-bold underline">Voir le détail</a>
+                    <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
+                        {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
+
+                    </a>
+                    <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
+                        class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
+                        <p>
+                            Arrivée à l’aéroport de Ouarzazate, où notre équipe vous accueille chaleureusement.
+                            <br /><br />
+                            Transfert en véhicule jusqu’aux portes du désert, puis courte marche pour rejoindre le
+                            bivouac.
+                            <br /><br />
+                            Installation du campement, temps d’adaptation, dîner collectif sous les étoiles, premières
+                            connexions avec le groupe et avec soi-même.
+
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -24,8 +40,26 @@
                 <img src="assets/firstStep.jpg" alt="Jour 2" class="w-full h-[200px] object-cover" />
                 <div class="p-[20px]">
                     <div class="font-bold text-terracotta mb-[5px]">Jour 2-6</div>
-                    <h3 class="font-display font-bold text-[20px] my-[10px]">Premiers pas dans le désert</h3>
-                    <a href="#" class="text-vert-sauge font-bold underline">Voir le détail</a>
+                    <h3 class="font-display font-bold text-[20px] my-[10px]">Marche et méditation</h3>
+                    <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
+                        {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
+                    </a>
+
+                    <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
+                        class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
+                        <p>
+                            Chaque journée commence par un réveil doux au cœur des dunes.
+                            <br /><br />
+                            Marche consciente à travers le désert, entrecoupée de pauses méditatives, de moments
+                            d’écriture ou de silence partagé.
+                            <br /><br />
+                            Temps libres pour se reposer, contempler, écrire ou échanger.
+                            Les repas sont pris ensemble dans la convivialité.
+                            <br /><br />
+                            Les bivouacs changent selon l’itinéraire, et les nuits peuvent se faire à la belle étoile.
+
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -35,17 +69,55 @@
                 <img src="assets/medidate.jpg" alt="Jour 3" class="w-full h-[200px] object-cover" />
                 <div class="p-[20px]">
                     <div class="font-bold text-terracotta mb-[5px]">Jour 7</div>
-                    <h3 class="font-display font-bold text-[20px] my-[10px]">Marche et méditation</h3>
-                    <a href="#" class="text-vert-sauge font-bold underline">Voir le détail</a>
+                    <h3 class="font-display font-bold text-[20px] my-[10px]">Ancrage et partage</h3>
+                    <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
+                        {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
+                    </a>
+
+                    <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
+                        class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
+                        <p>
+                            Dernière marche au lever du soleil, en silence, pour ancrer les expériences vécues.
+                            <br /><br />
+
+                            Temps de bilan, d’échanges sur le vécu du séjour et de recentrage personnel.
+                            <br /><br />
+
+                            Retour progressif à la ville puis transfert jusqu’à l’aéroport de Ouarzazate.
+                            <br /><br />
+
+                            Fin du voyage en douceur, avec un esprit apaisé et des souvenirs ancrés dans le cœur.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div [@expandCollapse]="showFullText ? 'open' : 'closed'"
+            class="overflow-hidden mx-auto mt-[40px] text-[20px] text-left leading-relaxed px-4">
+            Il y a quelque chose de profondément magique à marcher dans le désert.<br><br>
+            Le sable sous nos pieds, le silence absolu, l’horizon à perte de vue : tout cela agit comme une
+            purification
+            naturelle du corps et de l’esprit.
+            Ce séjour dans le désert marocain peut être une véritable renaissance pour celles et ceux qui ressentent
+            le
+            besoin de faire une pause, de ralentir, de respirer.
+            <br><br>
+            Pendant quelques jours, nous abandonnons nos rythmes effrénés pour retrouver le silence, l’instant
+            présent,
+            la simplicité.
+            Chaque pas dans le sable nous éloigne un peu plus du superflu, et nous rapproche de ce qui compte
+            vraiment.
+            <br><br>
+            Le désert n’est pas seulement un lieu : c’est un miroir de soi-même.
+            Un espace de vide fertile, où tout peut recommencer.
+        </div>
+
         <div class="text-center mt-[40px]">
-            <a href="#"
+            <button (click)="toggleFullText()"
                 class="inline-block bg-vert-sauge text-blanc px-[20px] py-[10px] rounded-[4px] transition-colors duration-300 hover:bg-terracotta">
-                Voir tout le programme
-            </a>
+                {{ showFullText ? 'Replier l’expérience' : 'Plonger dans l’expérience' }}
+            </button>
         </div>
     </div>
 </section>
