@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Hero } from './hero/hero';
 import { Tabs } from './tabs/tabs';
 import { Programme } from './programme/programme';
-import { Footer } from '../../footer/footer/footer';
+import { Footer } from '../footer/footer';
 
 @Component({
   selector: 'app-home',
