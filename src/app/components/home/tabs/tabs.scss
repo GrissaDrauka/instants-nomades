@@ -15,5 +15,5 @@
 }
 
 .tab.active {
-    @apply border-b-[3px] border-vert-sauge text-vert-sauge;
+    @apply border-b-[1px] border-vert-sauge text-vert-sauge border-solid;
 }

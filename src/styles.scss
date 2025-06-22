@@ -5,3 +5,41 @@
 .text-shadow {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
+
+@layer utilities {
+    @keyframes slideInLeft {
+        0% {
+            transform: translateX(100%) scale(0.98);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideInRight {
+        0% {
+            transform: translateX(-100%) scale(0.98);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateX(0) scale(1);
+            opacity: 1;
+        }
+    }
+
+    .slide-in-left {
+        animation: slideInLeft 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .slide-in-right {
+        animation: slideInRight 1.5s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .tab-content {
+        @apply w-full h-full;
+    }
+}

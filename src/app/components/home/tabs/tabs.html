@@ -1,15 +1,28 @@
-<section class="tabs-section">
-    <div class="tabs">
-        <button (click)="setTab('programme')" class="tab">Programme</button>
-        <button (click)="setTab('bonasavoir')" class="tab">Bon à savoir</button>
-        <button (click)="setTab('inclus')" class="tab">Inclus</button>
-    </div>
-</section>
+<div class="bg-beige">
+    <section class="tabs-section">
+        <div class="tabs">
+            <button (click)="setTab('programme')" class="tab"
+                [ngClass]="{ 'active': activeTab() === 'programme' }">Programme</button>
+            <button (click)="setTab('bonasavoir')" class="tab"
+                [ngClass]="{ 'active': activeTab() === 'bonasavoir' }">Bon à savoir</button>
+            <button (click)="setTab('inclus')" class="tab"
+                [ngClass]="{ 'active': activeTab() === 'inclus' }">Inclus</button>
+        </div>
+    </section>
 
-@if (activeTab() === 'programme') {
-<app-programme />
-} @else if (activeTab() === 'bonasavoir') {
-<app-bon-a-savoir />
-} @else {
-<app-inclus />
-}
+    <div class="relative overflow-hidden min-h-[300px]">
+        @if (activeTab() === 'programme') {
+        <div [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'" class="tab-content">
+            <app-programme></app-programme>
+        </div>
+        } @else if (activeTab() === 'bonasavoir') {
+        <div [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'" class="tab-content">
+            <app-bon-a-savoir></app-bon-a-savoir>
+        </div>
+        } @else {
+        <div [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'" class="tab-content">
+            <app-inclus></app-inclus>
+        </div>
+        }
+    </div>
+</div>
