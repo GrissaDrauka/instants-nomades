@@ -17,6 +17,7 @@ export default {
                 serif: ['Cormorant Garamond', 'serif'],
                 display: ['Playfair Display', 'serif'],
                 sans: ['Lato', 'sans-serif'],
+                handwritten: ['"Dancing Script"', 'cursive'],
             },
         },
     },
