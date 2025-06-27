@@ -21,4 +21,14 @@ export const routes: Routes = [
         loadComponent: () =>
             import('./components/contact/contact').then(m => m.Contact),
     },
+    {
+        path: 'merci',
+        loadComponent: () =>
+            import('./components/merci/merci').then(m => m.Merci),
+    },
+    {
+        path: 'mentions-legales',
+        loadComponent: () =>
+            import('./components/mentions-legales/mentions-legales').then(m => m.MentionsLegales)
+    }
 ];
