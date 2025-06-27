@@ -17,7 +17,8 @@
         <!-- Navigation desktop -->
         <nav class="space-x-8 font-bold font-sans hidden sm:block">
             <a routerLink="/le-voyage" class="text-vert-sauge hover:text-terracotta transition-colors">Le voyage</a>
-            <a routerLink="/" class="text-vert-sauge hover:text-terracotta transition-colors">Nos accompagnants</a>
+            <a routerLink="/accompagnants"
+                class="text-vert-sauge hover:text-terracotta transition-colors">Rencontres</a>
             <a routerLink="/contact" class="text-vert-sauge hover:text-terracotta transition-colors">Contact</a>
         </nav>
     </div>
@@ -26,7 +27,8 @@
     @if (isMenuOpen) {
     <div class="sm:hidden px-4 pb-4 space-y-2 font-bold font-sans">
         <a routerLink="/le-voyage" class="block text-vert-sauge hover:text-terracotta transition-colors">Le voyage</a>
-        <a routerLink="/" class="block text-vert-sauge hover:text-terracotta transition-colors">Nos accompagnants</a>
+        <a routerLink="/accompagnants"
+            class="block text-vert-sauge hover:text-terracotta transition-colors">Rencontres</a>
         <a routerLink="/contact" class="block text-vert-sauge hover:text-terracotta transition-colors">Contact</a>
     </div>
     }
