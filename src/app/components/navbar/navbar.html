@@ -15,21 +15,60 @@
         </button>
 
         <!-- Navigation desktop -->
-        <nav class="space-x-8 font-bold font-sans hidden sm:block">
-            <a routerLink="/le-voyage" class="text-vert-sauge hover:text-terracotta transition-colors">Le voyage</a>
-            <a routerLink="/accompagnants"
-                class="text-vert-sauge hover:text-terracotta transition-colors">Rencontres</a>
-            <a routerLink="/contact" class="text-vert-sauge hover:text-terracotta transition-colors">Contact</a>
+        <nav class="space-x-8 font-bold font-sans hidden sm:flex items-center">
+            <a routerLink="/le-voyage" routerLinkActive="text-terracotta"
+                class="text-vert-sauge hover:text-terracotta transition-colors">
+                Le voyage
+            </a>
+
+            <!-- Menu déroulant Rencontres -->
+            <div class="relative group">
+                <a routerLink="/rencontres/qui-suis-je" routerLinkActive="text-terracotta"
+                    [routerLinkActiveOptions]="{ exact: false }"
+                    class="text-vert-sauge hover:text-terracotta transition-colors cursor-pointer">
+                    Rencontres
+                </a>
+                <div
+                    class="absolute hidden group-hover:flex flex-col bg-sable border border-beige rounded shadow-md z-50">
+                    <a routerLink="/rencontres/qui-suis-je" routerLinkActive="bg-beige text-terracotta"
+                        class="px-4 py-2 hover:bg-beige text-vert-sauge transition-colors">Qui suis-je ?</a>
+                    <a routerLink="/rencontres/accompagnants" routerLinkActive="bg-beige text-terracotta"
+                        class="px-4 py-2 hover:bg-beige text-vert-sauge transition-colors">Les accompagnants</a>
+                </div>
+            </div>
+
+            <a routerLink="/contact" routerLinkActive="text-terracotta"
+                class="text-vert-sauge hover:text-terracotta transition-colors">
+                Contact
+            </a>
         </nav>
     </div>
 
-    <!-- Navigation mobile (nouveau @if) -->
+    <!-- Navigation mobile -->
     @if (isMenuOpen) {
     <div class="sm:hidden px-4 pb-4 space-y-2 font-bold font-sans">
-        <a routerLink="/le-voyage" class="block text-vert-sauge hover:text-terracotta transition-colors">Le voyage</a>
-        <a routerLink="/accompagnants"
-            class="block text-vert-sauge hover:text-terracotta transition-colors">Rencontres</a>
-        <a routerLink="/contact" class="block text-vert-sauge hover:text-terracotta transition-colors">Contact</a>
+        <a routerLink="/le-voyage" routerLinkActive="text-terracotta"
+            class="block text-vert-sauge hover:text-terracotta transition-colors">
+            Le voyage
+        </a>
+
+        <!-- Mobile menu imbriqué -->
+        <div class="space-y-1">
+            <div class="text-vert-sauge">Rencontres</div>
+            <a routerLink="/rencontres/qui-suis-je" routerLinkActive="text-terracotta"
+                class="block ml-4 text-vert-sauge hover:text-terracotta transition-colors">
+                Qui suis-je ?
+            </a>
+            <a routerLink="/rencontres/accompagnants" routerLinkActive="text-terracotta"
+                class="block ml-4 text-vert-sauge hover:text-terracotta transition-colors">
+                Les accompagnants
+            </a>
+        </div>
+
+        <a routerLink="/contact" routerLinkActive="text-terracotta"
+            class="block text-vert-sauge hover:text-terracotta transition-colors">
+            Contact
+        </a>
     </div>
     }
 </nav>

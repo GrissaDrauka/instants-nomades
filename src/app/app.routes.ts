@@ -12,9 +12,14 @@ export const routes: Routes = [
             import('./components/le-voyage/le-voyage').then(m => m.LeVoyage),
     },
     {
-        path: 'accompagnants',
+        path: 'rencontres/qui-suis-je',
         loadComponent: () =>
-            import('./components/accompagnants/accompagnants').then(m => m.Accompagnants),
+            import('./components/rencontres/qui-suis-je/qui-suis-je').then(m => m.QuiSuisJe),
+    },
+    {
+        path: 'rencontres/accompagnants',
+        loadComponent: () =>
+            import('./components/rencontres/accompagnants/accompagnants').then(m => m.Accompagnants),
     },
     {
         path: 'contact',
