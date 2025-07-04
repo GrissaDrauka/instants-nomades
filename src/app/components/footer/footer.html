@@ -1,17 +1,16 @@
-<footer class="bg-beige py-3 text-[12px] text-[#555]">
+<footer class="bg-beige py-3 text-[12px] text-[#555] border-t border-vert-sauge/40">
     <div class="max-w-screen-sm mx-auto px-4 space-y-2">
-
         <!-- Grille des colonnes -->
-        <div class="grid sm:grid-cols-4 divide-x divide-[#555]/50 gap-1 text-center">
-
+        <div
+            class="grid sm:grid-cols-4 gap-1 items-center text-center sm:text-center divide-y sm:divide-y-0 sm:divide-x divide-[#555]/50">
             <!-- Colonne 1 -->
-            <div class="pr-0 pl-0 space-y-1">
+            <div class="sm:pr-0 sm:pl-0 space-y-1 py-2 sm:py-0">
                 <a routerLink="/" class="block underline hover:text-vert-sauge transition">Accueil</a>
                 <a routerLink="/le-voyage" class="block underline hover:text-vert-sauge transition">Le voyage</a>
             </div>
 
             <!-- Colonne 2 -->
-            <div class="px-2 space-y-1">
+            <div class="sm:px-2 space-y-1 py-2 sm:py-0">
                 <a routerLink="/rencontres/qui-suis-je" class="block underline hover:text-vert-sauge transition">Qui
                     suis-je ?</a>
                 <a routerLink="/rencontres/accompagnants" class="block underline hover:text-vert-sauge transition">Les
@@ -19,15 +18,15 @@
             </div>
 
             <!-- Colonne 3 -->
-            <div class="px-2 space-y-1">
+            <div class="sm:px-2 space-y-1 py-2 sm:py-0">
                 <a routerLink="/contact" class="block underline hover:text-vert-sauge transition">Contact</a>
                 <a routerLink="/mentions-legales" class="block underline hover:text-vert-sauge transition">Mentions
                     légales</a>
             </div>
 
             <!-- Colonne 4 : Réseaux sociaux -->
-            <div class="px-6 flex flex-col items-start space-y-1">
-                <div class="flex flex-col items-center gap-0">
+            <div class="sm:px-6 flex flex-col items-center sm:items-start space-y-1 py-2 sm:py-0">
+                <div class="flex flex-col items-center gap-1">
                     <!-- Instagram -->
                     <a href="https://www.instagram.com/michelpicas" aria-label="Instagram" target="_blank"
                         rel="noopener noreferrer" class="hover:text-vert-sauge transition" title="Instagram">
@@ -56,6 +55,5 @@
         <div class="text-center text-[#777] text-[12px] pt-1">
             &copy; 2025 Instants Nomades – Tous droits réservés
         </div>
-
     </div>
 </footer>
