@@ -1,123 +1,130 @@
-<section class="bg-beige pt-[60px]">
-    <div class="max-w-screen-xl mx-auto px-4">
-        <h2 class="font-display text-[36px] text-vert-sauge font-bold text-center mb-[60px]">
-            Contact & informations
-        </h2>
+<main>
 
-        <div class="flex flex-col lg:flex-row gap-[60px] justify-center items-start">
-            <div class="w-full max-w-xl mx-auto lg:mx-0 lg:flex-1">
-                <app-contact-form></app-contact-form>
-            </div>
-            <div class="w-full max-w-xl mx-auto lg:mx-0 lg:flex-1">
-                <app-contact-infos></app-contact-infos>
+    <section class="bg-beige pt-[60px]" aria-label="Formulaire de contact et informations">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="font-display text-[36px] text-vert-sauge font-bold text-center mb-[60px]">
+                Contact & informations
+            </h2>
+
+            <div class="flex flex-col lg:flex-row gap-[60px] justify-center items-start">
+                <div class="w-full max-w-xl mx-auto lg:mx-0 lg:flex-1">
+                    <app-contact-form></app-contact-form>
+                </div>
+                <div class="w-full max-w-xl mx-auto lg:mx-0 lg:flex-1">
+                    <app-contact-infos></app-contact-infos>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Trek privé -->
-<section class="bg-beige py-[30px]">
-    <div class="max-w-screen-xl mx-auto px-4 text-[18px] text-gray-800 leading-relaxed">
-        <h2 class="font-display text-[26px] text-vert-sauge font-bold mb-4">Trek privé sur demande</h2>
-        <p>
-            Pour les demandes de trek privé <em>(en couple, en famille, entre amis, entre collègues...)</em>, vous
-            pouvez me contacter directement.
-            <br />
-            👉 Ces treks sont possibles entre les mois de <strong>septembre et mai</strong>, sous réserve de
-            disponibilité.
-        </p>
-    </div>
-</section>
-
-<!-- Informations voyageurs -->
-<section id="informations-voyageurs" class="bg-sable py-[40px]">
-    <div
-        class="max-w-screen-xl mx-auto px-4 text-[18px] text-gray-800 leading-relaxed border-l-[6px] border-vert-sauge pl-6">
-        <h2 class="font-display text-[26px] text-vert-sauge font-bold mb-4 flex items-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-terracotta" viewBox="0 0 24 24"
-                fill="currentColor">
-                <path d="M11.001 10h2v5h-2zM11 16h2v2h-2z" />
-                <path fill-rule="evenodd"
-                    d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm20 0c0-4.971-4.029-9-9-9S3 7.029 3 12s4.029 9 9 9 9-4.029 9-9z"
-                    clip-rule="evenodd" />
-            </svg>
-            Informations voyageurs
-        </h2>
-        <p class="mb-6">
-            Merci de compléter les informations ci-dessous et de les retourner par simple retour de mail à <a
-                href="mailto:picasmichel@gmail.com"
-                class="underline text-vert-sauge hover:text-terracotta">picasmichel&#64;gmail.com</a> avant le départ.
-            <br />
-            <span class="italic">Une photocopie du passeport en cours de validité est obligatoire pour tous (pas de visa
-                demandé).</span>
-        </p>
-
-        <ul class="list-disc list-inside space-y-2">
-            <li>Prénom, nom et date de naissance (comme indiqué sur le passeport)</li>
-            <li>Un numéro de téléphone où vous serez joignable pendant votre voyage</li>
-            <li>Êtes-vous sujet à des allergies ou intolérances alimentaires ?</li>
-            <li>Souffrez-vous d’une pathologie ou suivez-vous un traitement médical que nous devons connaître ?</li>
-            <li class="ml-4 italic text-sm">
-                (Un avis médical est recommandé en cas d’insuffisance cardio-vasculaire, respiratoire, épilepsie,
-                dépression…)
-            </li>
-            <li>Le niveau du trek (intermédiaire – 4 à 5h30 de marche) correspond-il à vos aptitudes ?</li>
-            <li>Autres informations ou souhaits à transmettre</li>
-        </ul>
-
-        <p class="mt-6">
-            Ces informations sont demandées par notre partenaire local pour garantir
-            la sécurité et le bon déroulement du séjour.
-        </p>
-    </div>
-</section>
-
-<section class="bg-beige py-[60px]">
-    <div class="max-w-screen-xl mx-auto px-4 text-[18px] text-gray-800 leading-relaxed">
-        <h2 class="font-display text-[32px] text-vert-sauge font-bold text-center mb-[40px]">
-            Hébergements à Marrakech
-        </h2>
-
-        <p class="mb-10 text-center">
-            Nous vous recommandons plusieurs Riads situés dans la médina pour <strong>prolonger ou préparer</strong>
-            votre séjour dans les meilleures conditions.
-        </p>
-
-        <div class="grid md:grid-cols-2 gap-8">
-
-            <!-- Riad Maud -->
-            <div class="bg-[#f3ebe2] p-6 rounded-xl shadow-md">
-                <h3 class="text-terracotta font-semibold text-[20px] mb-2">Riad Maud</h3>
-                <p>Agréable Riad situé proche de la place Jema Efna. 9 chambres, ambiance conviviale.</p>
-                <p class="mt-2 text-sm text-vert-sauge">📧 <a href="mailto:riadmaud@gmail.com"
-                        class="underline">riadmaud&#64;gmail.com</a></p>
-            </div>
-
-            <!-- Riad Andalla Spa -->
-            <div class="bg-[#f3ebe2] p-6 rounded-xl shadow-md">
-                <h3 class="text-terracotta font-semibold text-[20px] mb-2">Riad Andalla Spa</h3>
-                <p>Un cadre magnifique au cœur de la médina avec petite piscine et spa.</p>
-                <p class="mt-2 text-sm text-vert-sauge">📧 <a href="mailto:riadandalaspa@gmail.com"
-                        class="underline">riadandalaspa&#64;gmail.com</a></p>
-            </div>
-
-            <!-- Riad Dar Fanny -->
-            <div class="bg-[#f3ebe2] p-6 rounded-xl shadow-md">
-                <h3 class="text-terracotta font-semibold text-[20px] mb-2">Riad Dar Fanny</h3>
-                <p>Une pépite dans la médina. Fanny vous accueille avec le cœur. Séjours de 3/5/7 nuits possibles avec
-                    jolie programmation en option.</p>
-                <p class="mt-2 text-sm text-vert-sauge">📧 <a href="mailto:darfannymarrakech@gmail.com"
-                        class="underline">darfannymarrakech&#64;gmail.com</a><br />📞 +212 6 18 59 22 02</p>
-            </div>
-
-            <!-- Riad Al Mamoune -->
-            <div class="bg-[#f3ebe2] p-6 rounded-xl shadow-md">
-                <h3 class="text-terracotta font-semibold text-[20px] mb-2">Riad Al Mamoune</h3>
-                <p>Emplacement idéal au cœur de la médina. Magnifique Riad avec jacuzzi et terrasse.</p>
-                <p class="mt-2 text-sm text-vert-sauge">📧 <a href="mailto:contact@riadalmamoune.com"
-                        class="underline">contact&#64;riadalmamoune.com</a></p>
-            </div>
-
+    <section class="bg-beige py-[30px]" aria-label="Trek privé sur demande">
+        <div class="max-w-screen-xl mx-auto px-4 text-[18px] text-gray-800 leading-relaxed">
+            <h2 class="font-display text-[26px] text-vert-sauge font-bold mb-4">Trek privé sur demande</h2>
+            <p>
+                Pour les demandes de trek privé <em>(en couple, en famille, entre amis, entre collègues...)</em>, vous
+                pouvez me contacter directement.
+                <br />
+                👉 Ces treks sont possibles entre les mois de <strong>septembre et mai</strong>, sous réserve de
+                disponibilité.
+            </p>
         </div>
-    </div>
-</section>
+    </section>
+
+    <section id="informations-voyageurs" class="bg-sable py-[40px]"
+        aria-label="Informations à transmettre avant le départ">
+        <div
+            class="max-w-screen-xl mx-auto px-4 text-[18px] text-gray-800 leading-relaxed border-l-[6px] border-vert-sauge pl-6">
+            <h2 class="font-display text-[26px] text-vert-sauge font-bold mb-4 flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-terracotta" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path d="M11.001 10h2v5h-2zM11 16h2v2h-2z" />
+                    <path fill-rule="evenodd"
+                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm20 0c0-4.971-4.029-9-9-9S3 7.029 3 12s4.029 9 9 9 9-4.029 9-9z"
+                        clip-rule="evenodd" />
+                </svg>
+                Informations voyageurs
+            </h2>
+            <p class="mb-6">
+                Merci de compléter les informations ci-dessous et de les retourner par simple retour de mail à
+                <a href="mailto:picasmichel@gmail.com" class="underline text-vert-sauge hover:text-terracotta">
+                    picasmichel&#64;gmail.com
+                </a>
+                avant le départ.
+                <br />
+                <span class="italic">Une photocopie du passeport en cours de validité est obligatoire pour tous (pas de
+                    visa
+                    demandé).</span>
+            </p>
+
+            <ul class="list-disc list-inside space-y-2">
+                <li>Prénom, nom et date de naissance (comme indiqué sur le passeport)</li>
+                <li>Un numéro de téléphone où vous serez joignable pendant votre voyage</li>
+                <li>Êtes-vous sujet à des allergies ou intolérances alimentaires ?</li>
+                <li>Souffrez-vous d’une pathologie ou suivez-vous un traitement médical que nous devons connaître ?</li>
+                <li class="ml-4 italic text-sm">
+                    (Un avis médical est recommandé en cas d’insuffisance cardio-vasculaire, respiratoire, épilepsie,
+                    dépression…)
+                </li>
+                <li>Le niveau du trek (intermédiaire – 4 à 5h30 de marche) correspond-il à vos aptitudes ?</li>
+                <li>Autres informations ou souhaits à transmettre</li>
+            </ul>
+
+            <p class="mt-6">
+                Ces informations sont demandées par notre partenaire local pour garantir
+                la sécurité et le bon déroulement du séjour.
+            </p>
+        </div>
+    </section>
+
+    <section class="bg-beige py-[60px]" aria-label="Hébergements recommandés à Marrakech">
+        <div class="max-w-screen-xl mx-auto px-4 text-[18px] text-gray-800 leading-relaxed">
+            <h2 class="font-display text-[32px] text-vert-sauge font-bold text-center mb-[40px]">
+                Hébergements à Marrakech
+            </h2>
+
+            <p class="mb-10 text-center">
+                Nous vous recommandons plusieurs Riads situés dans la médina pour <strong>prolonger ou préparer</strong>
+                votre séjour dans les meilleures conditions.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Riad Maud -->
+                <div class="bg-[#f3ebe2] p-6 rounded-xl shadow-md">
+                    <h3 class="text-terracotta font-semibold text-[20px] mb-2">Riad Maud</h3>
+                    <p>Agréable Riad situé proche de la place Jema Efna. 9 chambres, ambiance conviviale.</p>
+                    <p class="mt-2 text-sm text-vert-sauge">📧 <a href="mailto:riadmaud@gmail.com"
+                            class="underline">riadmaud&#64;gmail.com</a></p>
+                </div>
+
+                <!-- Riad Andalla Spa -->
+                <div class="bg-[#f3ebe2] p-6 rounded-xl shadow-md">
+                    <h3 class="text-terracotta font-semibold text-[20px] mb-2">Riad Andalla Spa</h3>
+                    <p>Un cadre magnifique au cœur de la médina avec petite piscine et spa.</p>
+                    <p class="mt-2 text-sm text-vert-sauge">📧 <a href="mailto:riadandalaspa@gmail.com"
+                            class="underline">riadandalaspa&#64;gmail.com</a></p>
+                </div>
+
+                <!-- Riad Dar Fanny -->
+                <div class="bg-[#f3ebe2] p-6 rounded-xl shadow-md">
+                    <h3 class="text-terracotta font-semibold text-[20px] mb-2">Riad Dar Fanny</h3>
+                    <p>Une pépite dans la médina. Fanny vous accueille avec le cœur. Séjours de 3/5/7 nuits possibles
+                        avec
+                        jolie programmation en option.</p>
+                    <p class="mt-2 text-sm text-vert-sauge">📧 <a href="mailto:darfannymarrakech@gmail.com"
+                            class="underline">darfannymarrakech&#64;gmail.com</a><br />📞 +212 6 18 59 22 02</p>
+                </div>
+
+                <!-- Riad Al Mamoune -->
+                <div class="bg-[#f3ebe2] p-6 rounded-xl shadow-md">
+                    <h3 class="text-terracotta font-semibold text-[20px] mb-2">Riad Al Mamoune</h3>
+                    <p>Emplacement idéal au cœur de la médina. Magnifique Riad avec jacuzzi et terrasse.</p>
+                    <p class="mt-2 text-sm text-vert-sauge">📧 <a href="mailto:contact@riadalmamoune.com"
+                            class="underline">contact&#64;riadalmamoune.com</a></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
