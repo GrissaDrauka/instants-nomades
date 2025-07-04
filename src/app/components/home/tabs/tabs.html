@@ -1,28 +1,41 @@
 <div class="bg-beige">
-    <section class="tabs-section">
-        <div class="tabs">
-            <button (click)="setTab('programme')" class="tab"
-                [ngClass]="{ 'active': activeTab() === 'programme' }">Programme</button>
-            <button (click)="setTab('bonasavoir')" class="tab"
-                [ngClass]="{ 'active': activeTab() === 'bonasavoir' }">Bon à savoir</button>
-            <button (click)="setTab('inclus')" class="tab"
-                [ngClass]="{ 'active': activeTab() === 'inclus' }">Inclus</button>
+    <section class="tabs-section" aria-label="Navigation entre les sections du séjour">
+        <div class="tabs" role="tablist">
+            <button (click)="setTab('programme')" class="tab" [ngClass]="{ 'active': activeTab() === 'programme' }"
+                role="tab" [attr.aria-selected]="activeTab() === 'programme'" aria-controls="panel-programme"
+                id="tab-programme">
+                Programme
+            </button>
+
+            <button (click)="setTab('bonasavoir')" class="tab" [ngClass]="{ 'active': activeTab() === 'bonasavoir' }"
+                role="tab" [attr.aria-selected]="activeTab() === 'bonasavoir'" aria-controls="panel-bonasavoir"
+                id="tab-bonasavoir">
+                Bon à savoir
+            </button>
+
+            <button (click)="setTab('inclus')" class="tab" [ngClass]="{ 'active': activeTab() === 'inclus' }" role="tab"
+                [attr.aria-selected]="activeTab() === 'inclus'" aria-controls="panel-inclus" id="tab-inclus">
+                Inclus
+            </button>
         </div>
     </section>
 
     <div class="relative overflow-hidden min-h-[300px]">
         @if (activeTab() === 'programme') {
-        <div [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'" class="tab-content">
+        <section id="panel-programme" class="tab-content" role="tabpanel" [attr.aria-labelledby]="'tab-programme'"
+            [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'">
             <app-programme></app-programme>
-        </div>
+        </section>
         } @else if (activeTab() === 'bonasavoir') {
-        <div [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'" class="tab-content">
+        <section id="panel-bonasavoir" class="tab-content" role="tabpanel" [attr.aria-labelledby]="'tab-bonasavoir'"
+            [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'">
             <app-bon-a-savoir></app-bon-a-savoir>
-        </div>
+        </section>
         } @else {
-        <div [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'" class="tab-content">
+        <section id="panel-inclus" class="tab-content" role="tabpanel" [attr.aria-labelledby]="'tab-inclus'"
+            [ngClass]="animationDirection() === 'forward' ? 'slide-in-left' : 'slide-in-right'">
             <app-inclus></app-inclus>
-        </div>
+        </section>
         }
     </div>
 </div>

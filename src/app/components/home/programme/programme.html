@@ -1,14 +1,16 @@
 <section class="bg-beige py-[60px]">
     <div class="max-w-screen-xl mx-auto px-4">
-        <h2 class="font-display font-bold text-[36px] text-vert-sauge">Les étapes du voyage</h2>
-        <p class="section-intro max-w-[700px] mb-[40px] mt-[20px]">
-            Jour après jour, ce voyage vous emmène au cœur du désert pour retrouver l’essentiel. <br />
-            Chaque étape a été pensée pour vous reconnecter à la nature, au silence… et à vous-même.
-        </p>
+        <header>
+            <h2 class="font-display font-bold text-[36px] text-vert-sauge">Les étapes du voyage</h2>
+            <p class="section-intro max-w-[700px] mb-[40px] mt-[20px]">
+                Jour après jour, ce voyage vous emmène au cœur du désert pour retrouver l’essentiel. <br />
+                Chaque étape a été pensée pour vous reconnecter à la nature, au silence… et à vous-même.
+            </p>
+        </header>
 
         <div class="grid gap-[30px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-            <!-- Carte Jour 1 -->
-            <div
+            <!-- Étape 1 -->
+            <article
                 class="bg-sable rounded-[8px] overflow-hidden shadow-md hover:-translate-y-[5px] transition-transform duration-300">
                 <img src="assets/airport.jpg" alt="Jour 1" class="w-full h-[200px] object-cover" />
                 <div class="p-[20px]">
@@ -16,7 +18,6 @@
                     <h3 class="font-display font-bold text-[20px] my-[10px]">Arrivée et installation</h3>
                     <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
                         {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
-
                     </a>
                     <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
                         class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
@@ -28,14 +29,13 @@
                             <br /><br />
                             Installation du campement, temps d’adaptation, dîner collectif sous les étoiles, premières
                             connexions avec le groupe et avec soi-même.
-
                         </p>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- Carte Jour 2-6 -->
-            <div
+            <!-- Étape 2 -->
+            <article
                 class="bg-sable rounded-[8px] overflow-hidden shadow-md hover:-translate-y-[5px] transition-transform duration-300">
                 <img src="assets/firstStep.jpg" alt="Jour 2" class="w-full h-[200px] object-cover" />
                 <div class="p-[20px]">
@@ -44,7 +44,6 @@
                     <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
                         {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
                     </a>
-
                     <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
                         class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
                         <p>
@@ -57,14 +56,13 @@
                             Les repas sont pris ensemble dans la convivialité.
                             <br /><br />
                             Les bivouacs changent selon l’itinéraire, et les nuits peuvent se faire à la belle étoile.
-
                         </p>
                     </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- Carte Jour 7 -->
-            <div
+            <!-- Étape 3 -->
+            <article
                 class="bg-sable rounded-[8px] overflow-hidden shadow-md hover:-translate-y-[5px] transition-transform duration-300">
                 <img src="assets/ancrage.png" alt="Jour 3" class="w-full h-[200px] object-cover" />
                 <div class="p-[20px]">
@@ -73,45 +71,40 @@
                     <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
                         {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
                     </a>
-
                     <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
                         class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
                         <p>
                             Dernière marche au lever du soleil, en silence, pour ancrer les expériences vécues.
                             <br /><br />
-
                             Temps de bilan, d’échanges sur le vécu du séjour et de recentrage personnel.
                             <br /><br />
-
                             Retour progressif à la ville puis transfert jusqu’à l’aéroport de Marrakech.
                             <br /><br />
-
                             Fin du voyage en douceur, avec un esprit apaisé et des souvenirs ancrés dans le cœur.
                         </p>
                     </div>
                 </div>
-            </div>
+            </article>
         </div>
 
-        <div [@expandCollapse]="showFullText ? 'open' : 'closed'"
+        <section [@expandCollapse]="showFullText ? 'open' : 'closed'"
             class="overflow-hidden mx-auto mt-[40px] text-[20px] text-left leading-relaxed px-4">
-            Il y a quelque chose de profondément magique à marcher dans le désert.<br><br>
-            Le sable sous nos pieds, le silence absolu, l’horizon à perte de vue : tout cela agit comme une
-            purification
-            naturelle du corps et de l’esprit.
-            Ce séjour dans le désert marocain peut être une véritable renaissance pour celles et ceux qui ressentent
-            le
-            besoin de faire une pause, de ralentir, de respirer.
-            <br><br>
-            Pendant quelques jours, nous abandonnons nos rythmes effrénés pour retrouver le silence, l’instant
-            présent,
-            la simplicité.
-            Chaque pas dans le sable nous éloigne un peu plus du superflu, et nous rapproche de ce qui compte
-            vraiment.
-            <br><br>
-            Le désert n’est pas seulement un lieu : c’est un miroir de soi-même.
-            Un espace de vide fertile, où tout peut recommencer.
-        </div>
+            <p>
+                Il y a quelque chose de profondément magique à marcher dans le désert.<br><br>
+                Le sable sous nos pieds, le silence absolu, l’horizon à perte de vue : tout cela agit comme une
+                purification naturelle du corps et de l’esprit.
+                Ce séjour dans le désert marocain peut être une véritable renaissance pour celles et ceux qui ressentent
+                le besoin de faire une pause, de ralentir, de respirer.
+                <br><br>
+                Pendant quelques jours, nous abandonnons nos rythmes effrénés pour retrouver le silence, l’instant
+                présent, la simplicité.
+                Chaque pas dans le sable nous éloigne un peu plus du superflu, et nous rapproche de ce qui compte
+                vraiment.
+                <br><br>
+                Le désert n’est pas seulement un lieu : c’est un miroir de soi-même.
+                Un espace de vide fertile, où tout peut recommencer.
+            </p>
+        </section>
 
         <div class="text-center mt-[40px]">
             <button (click)="toggleFullText()"
