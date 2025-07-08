@@ -19,9 +19,10 @@
                 <div class="p-[20px]">
                     <div class="font-bold text-terracotta mb-[5px]">Jour 1</div>
                     <h3 class="font-display font-bold text-[20px] my-[10px]">Arrivée et installation</h3>
-                    <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
+                    <button type="button" (click)="toggleAllDetails()"
+                        class="text-vert-sauge font-bold underline cursor-pointer focus:outline-none">
                         {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
-                    </a>
+                    </button>
                     <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
                         class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
                         <p>
@@ -47,9 +48,10 @@
                 <div class="p-[20px]">
                     <div class="font-bold text-terracotta mb-[5px]">Jour 2-6</div>
                     <h3 class="font-display font-bold text-[20px] my-[10px]">Marche et méditation</h3>
-                    <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
+                    <button type="button" (click)="toggleAllDetails()"
+                        class="text-vert-sauge font-bold underline cursor-pointer focus:outline-none">
                         {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
-                    </a>
+                    </button>
                     <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
                         class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
                         <p>
@@ -77,9 +79,10 @@
                 <div class="p-[20px]">
                     <div class="font-bold text-terracotta mb-[5px]">Jour 7</div>
                     <h3 class="font-display font-bold text-[20px] my-[10px]">Ancrage et partage</h3>
-                    <a (click)="toggleAllDetails()" class="text-vert-sauge font-bold underline cursor-pointer">
+                    <button type="button" (click)="toggleAllDetails()"
+                        class="text-vert-sauge font-bold underline cursor-pointer focus:outline-none">
                         {{ showAllDetails ? 'Masquer le détail' : 'Voir le détail' }}
-                    </a>
+                    </button>
                     <div [@expandCollapse]="showAllDetails ? 'open' : 'closed'"
                         class="overflow-hidden transition-all duration-700 ease-in-out mt-[10px] text-[15px] leading-snug text-justify">
                         <p>
