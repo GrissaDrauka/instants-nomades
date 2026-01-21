@@ -1,10 +1,103 @@
-<section class="bg-sable min-h-screen py-16 px-4">
-    <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-5xl font-display text-terracotta text-center mb-12">
-            Prochains Départs
-        </h1>
-        <p class="text-center text-vert-sauge font-sans">
-            Contenu à venir...
-        </p>
-    </div>
-</section>
+<main>
+    <section class="bg-sable py-[60px]" aria-label="Prochains départs pour le trek">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h1 class="font-display text-[36px] md:text-[42px] text-vert-sauge font-bold text-center mb-6">
+                Prochains Départs
+            </h1>
+
+            <p class="text-center text-[18px] max-w-3xl mx-auto mb-12 leading-relaxed">
+                Rejoignez-nous pour une aventure inoubliable au cœur du désert marocain.<br>
+                Chaque trek dure <strong>7 jours / 6 nuits</strong> et part de Marrakech.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-10 max-w-4xl mx-auto">
+                <!-- Treks 2026 -->
+                <div class="bg-beige rounded-lg p-8 shadow-sm">
+                    <h2 class="text-2xl text-vert-sauge font-bold mb-6 text-center">Treks 2026</h2>
+                    <ul class="space-y-4 text-[18px]">
+                        <li class="flex items-center gap-3">
+                            <span>🗓️</span>
+                            <span>Du <strong>19 au 25 Avril</strong> 2026</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span>🗓️</span>
+                            <span>Du <strong>26 Avril au 02 Mai</strong> 2026</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span>🗓️</span>
+                            <span>Du <strong>18 au 24 Octobre</strong> 2026</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span>🗓️</span>
+                            <span>Du <strong>25 au 31 Octobre</strong> 2026</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Treks 2027 -->
+                <div class="bg-beige rounded-lg p-8 shadow-sm">
+                    <h2 class="text-2xl text-vert-sauge font-bold mb-6 text-center">Treks 2027</h2>
+                    <ul class="space-y-4 text-[18px]">
+                        <li class="flex items-center gap-3">
+                            <span>🗓️</span>
+                            <span>Du <strong>07 au 13 Février</strong> 2027</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span>🗓️</span>
+                            <span>Du <strong>14 au 20 Février</strong> 2027</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span>🗓️</span>
+                            <span>Du <strong>04 au 10 Avril</strong> 2027</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <span>🗓️</span>
+                            <span>Du <strong>11 au 17 Avril</strong> 2027</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Infos complémentaires -->
+            <div class="mt-12 max-w-3xl mx-auto bg-beige rounded-lg p-8 shadow-sm">
+                <h2 class="text-xl text-vert-sauge font-bold mb-4 text-center">Informations pratiques</h2>
+                <div class="grid sm:grid-cols-2 gap-6 text-[16px]">
+                    <div class="flex items-start gap-3">
+                        <span>📍</span>
+                        <p><strong>Départ :</strong> Marrakech, place Jemaa el Fna à 7h30</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span>⏱️</span>
+                        <p><strong>Durée :</strong> 7 jours / 6 nuits</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span>👥</span>
+                        <p><strong>Groupe :</strong> Trek assuré à partir de 8 personnes</p>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <span>💰</span>
+                        <p><strong>Tarif :</strong> 780 € par personne tout compris</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trek privé -->
+            <div class="mt-8 max-w-3xl mx-auto bg-beige rounded-lg p-8 shadow-sm">
+                <h2 class="text-xl text-vert-sauge font-bold mb-4 text-center">Trek privé sur demande</h2>
+                <p class="text-[16px] text-center leading-relaxed">
+                    Pour les demandes de trek privé (en couple, en famille, entre amis, entre collègues...),
+                    vous pouvez me contacter directement.<br><br>
+                    👉 Ces treks sont possibles entre les mois de <strong>septembre et mai</strong>, sous réserve de disponibilité.
+                </p>
+            </div>
+
+            <!-- Bouton contact -->
+            <div class="mt-12 text-center">
+                <a routerLink="/contact"
+                    class="inline-block bg-vert-sauge text-white px-8 py-3 rounded-full text-[18px] font-semibold hover:bg-terracotta transition-all duration-300">
+                    Réserver mon trek
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
