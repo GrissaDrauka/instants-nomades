@@ -1,83 +1,61 @@
 <main>
-    <!-- Section 1 : Me contacter -->
-    <section class="bg-sable py-[60px]" aria-label="Formulaire de contact">
+    <section class="bg-sable py-[70px]">
         <div class="max-w-screen-xl mx-auto px-4">
-            <h1 class="font-display text-[36px] md:text-[42px] text-vert-sauge font-bold text-center mb-4">
-                Me contacter
-            </h1>
-            <p class="text-[18px] text-gray-800 leading-relaxed text-center mb-8 max-w-2xl mx-auto">
-                Une question sur le trek dans le désert marocain ? Besoin de précisions sur le séjour, l'itinéraire ou les inscriptions ?
-                Laissez-moi un message, je vous répondrai rapidement.
-            </p>
-
-            <div class="max-w-xl mx-auto">
-                <app-contact-form></app-contact-form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section 2 : Trek privé -->
-    <section class="bg-beige py-[40px]" aria-label="Trek privé sur demande">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <div class="max-w-3xl mx-auto bg-sable p-6 rounded-lg">
-                <h2 class="font-display text-[24px] text-vert-sauge font-bold mb-4">Trek privé sur demande</h2>
-                <p class="text-[17px] text-gray-800 leading-relaxed">
-                    Pour les demandes de trek privé <em>(en couple, en famille, entre amis, entre collègues...)</em>,
-                    vous pouvez me contacter directement.<br /><br />
-                    👉 Ces treks sont possibles entre les mois de <strong>septembre et mai</strong>, sous réserve de disponibilité.
+            <!-- Header -->
+            <div class="text-center mb-10">
+                <h1 class="font-display text-[36px] md:text-[42px] text-vert-sauge font-bold mb-4">
+                    Me contacter
+                </h1>
+                <p class="text-[18px] text-gray-700 max-w-xl mx-auto">
+                    Une question sur le trek ? Besoin de précisions sur le séjour ou les inscriptions ?
                 </p>
             </div>
-        </div>
-    </section>
 
-    <!-- Section 3 : Informations voyageurs -->
-    <section id="informations-voyageurs" class="bg-sable py-[50px]" aria-label="Informations à transmettre avant le départ">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <div class="max-w-3xl mx-auto">
-                <div class="border-l-4 border-terracotta bg-beige p-6 rounded-r-lg">
-                    <h2 class="font-display text-[24px] text-vert-sauge font-bold mb-4 flex items-center gap-2">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-terracotta" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M11.001 10h2v5h-2zM11 16h2v2h-2z" />
-                            <path fill-rule="evenodd"
-                                d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm20 0c0-4.971-4.029-9-9-9S3 7.029 3 12s4.029 9 9 9 9-4.029 9-9z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        Informations voyageurs
-                    </h2>
-                    <p class="mb-4 text-[17px] leading-relaxed">
-                        Merci de compléter les informations ci-dessous et de me les retourner par mail à
-                        <a href="mailto:picasmichel@gmail.com" class="underline text-vert-sauge hover:text-terracotta font-semibold">
-                            picasmichel&#64;gmail.com
-                        </a> avant le départ.
-                    </p>
-                    <p class="mb-4 text-[15px] italic text-gray-600">
-                        Une photocopie du passeport en cours de validité est obligatoire pour tous (pas de visa demandé).
-                    </p>
-
-                    <ul class="list-disc list-inside space-y-2 text-[16px]">
-                        <li>Prénom, nom et date de naissance (comme indiqué sur le passeport)</li>
-                        <li>Un numéro de téléphone où vous serez joignable pendant votre voyage</li>
-                        <li>Êtes-vous sujet à des allergies ou intolérances alimentaires ?</li>
-                        <li>Souffrez-vous d'une pathologie ou suivez-vous un traitement médical que je dois connaître ?</li>
-                        <li>Le niveau du trek (4h/4h30 de marche par jour) correspond-il à vos aptitudes ?</li>
-                        <li>Autres informations ou souhaits à transmettre</li>
-                    </ul>
-
-                    <p class="mt-4 text-[15px] italic text-gray-600">
-                        Ces informations sont demandées par mon partenaire local pour garantir la sécurité et le bon déroulement du séjour.
-                    </p>
-                </div>
+            <!-- Formulaire centré -->
+            <div class="max-w-xl mx-auto bg-beige p-8 rounded-lg">
+                <app-contact-form></app-contact-form>
             </div>
-        </div>
-    </section>
 
-    <!-- Section 4 : Bouton vers tarifs -->
-    <section class="bg-beige py-[40px]">
-        <div class="text-center">
-            <a routerLink="/contact/tarifs"
-                class="inline-block bg-vert-sauge text-white px-8 py-3 rounded-full text-[18px] font-semibold hover:bg-terracotta transition-all duration-300">
-                Voir les tarifs & informations
-            </a>
+            <!-- Coordonnées en ligne -->
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-10 mt-12 text-[16px]">
+                <!-- Email -->
+                <a href="mailto:picasmichel@gmail.com"
+                   class="flex items-center gap-2 text-gray-700 hover:text-terracotta transition-colors">
+                    <span class="text-xl">📧</span>
+                    <span>picasmichel&#64;gmail.com</span>
+                </a>
+
+                <span class="hidden md:inline text-gray-400">|</span>
+
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/michelpicas" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 text-gray-700 hover:text-terracotta transition-colors">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z" />
+                        <path d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z" />
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+
+                <span class="hidden md:inline text-gray-400">|</span>
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/1FvtbJFQG6/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"
+                   class="flex items-center gap-2 text-gray-700 hover:text-terracotta transition-colors">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4C9.373 4 4 9.373 4 16c0 5.99 4.388 10.952 10.125 11.854V19.5h-3.047v-3.5h3.047v-2.672c0-3.007 1.792-4.668 4.533-4.668 1.313 0 2.687.234 2.687.234v2.953H19.83c-1.49 0-1.955.926-1.955 1.875V16h3.328l-.532 3.5h-2.796v8.354C23.612 26.952 28 21.99 28 16c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                    <span>Facebook</span>
+                </a>
+            </div>
+
+            <!-- CTA vers tarifs -->
+            <div class="text-center mt-12">
+                <a routerLink="/contact/tarifs"
+                    class="inline-block bg-vert-sauge text-white px-8 py-3 rounded-full text-[18px] font-semibold hover:bg-terracotta transition-all duration-300">
+                    Voir les tarifs & informations
+                </a>
+            </div>
         </div>
     </section>
 </main>

@@ -151,8 +151,45 @@
         </div>
     </section>
 
-    <!-- Section 5 : Bouton contact -->
-    <section class="bg-sable py-[40px]">
+    <!-- Section 5 : Informations voyageurs -->
+    <section id="informations-voyageurs" class="bg-sable py-[50px]">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="border-l-4 border-terracotta bg-beige p-6 rounded-r-lg">
+                    <h2 class="font-display text-[24px] text-vert-sauge font-bold mb-4 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-terracotta" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M11.001 10h2v5h-2zM11 16h2v2h-2z" />
+                            <path fill-rule="evenodd"
+                                d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12zm20 0c0-4.971-4.029-9-9-9S3 7.029 3 12s4.029 9 9 9 9-4.029 9-9z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        Informations voyageurs
+                    </h2>
+                    <p class="mb-4 text-[17px] leading-relaxed">
+                        Après inscription, merci de me transmettre les informations suivantes par mail à
+                        <a href="mailto:picasmichel@gmail.com" class="underline text-vert-sauge hover:text-terracotta font-semibold">
+                            picasmichel&#64;gmail.com
+                        </a> avant le départ.
+                    </p>
+                    <p class="mb-4 text-[15px] italic text-gray-600">
+                        Une photocopie du passeport en cours de validité est obligatoire (pas de visa demandé).
+                    </p>
+
+                    <ul class="list-disc list-inside space-y-2 text-[16px]">
+                        <li>Prénom, nom et date de naissance (comme indiqué sur le passeport)</li>
+                        <li>Un numéro de téléphone où vous serez joignable pendant votre voyage</li>
+                        <li>Allergies ou intolérances alimentaires</li>
+                        <li>Pathologie ou traitement médical à signaler</li>
+                        <li>Le niveau du trek (4h/4h30 de marche par jour) correspond-il à vos aptitudes ?</li>
+                        <li>Autres informations ou souhaits à transmettre</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6 : Bouton contact -->
+    <section class="bg-beige py-[40px]">
         <div class="text-center">
             <a routerLink="/contact"
                 class="inline-block bg-vert-sauge text-white px-8 py-3 rounded-full text-[18px] font-semibold hover:bg-terracotta transition-all duration-300">
