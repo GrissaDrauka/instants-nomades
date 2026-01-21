@@ -1,54 +1,219 @@
-<section class="bg-beige" aria-label="Présentation de M. Picas">
-    <div class="max-w-screen-xl mx-auto px-4 min-h-[88.65vh] flex items-center">
-        <div class="w-full border border-vert-sauge/40 rounded-2xl shadow-lg p-10 lg:p-14 bg-sable backdrop-blur-sm">
-            <div class="flex flex-col lg:flex-row items-center gap-10">
-                <!-- Texte à gauche -->
-                <div class="lg:w-2/3 space-y-6 text-[18px] leading-relaxed">
-                    <h2 class="font-display text-[32px] text-vert-sauge font-bold text-center lg:text-center">
-                        Qui suis-je ?
-                    </h2>
-
-                    <p>
-                        Il y a 20 ans, dans le cadre d’une reconversion professionnelle, j’ai suivi une formation de
-                        sophrologue auprès de l’institut ISO à Toulouse. Cinq ans plus tard, je suis également devenu
-                        moniteur d’escalade.
-                    </p>
-
-                    <p>
-                        Il y a 12 ans, j’ai obtenu un nouveau diplôme qui m’a permis de devenir professeur de pilates et
-                        de stretching au CREPS de Toulouse.
-                        <br /><br />En complément de la sophrologie, j’ai ensuite suivi une
-                        formation d’hypnothérapeute, que je pratique aujourd’hui parallèlement à mon activité.
-                    </p>
-
-                    <p>
-                        Au fil du temps, une passion profonde s’est imposée : les treks dans le désert et les sommets de
-                        l’Atlas.
-                    </p>
-
-                    <p>
-                        Je conçois ces voyages comme des parenthèses de reconnexion, portées par une structure locale
-                        fidèle à mes valeurs.
-                        C'est cette passion qui m'a conduit à créer Instants Nomades, initiateur de cette aventure
-                        intérieure.
-                    </p>
-
-                    <!-- Signature -->
-                    <div class="text-right italic font-handwritten text-vert-sauge text-[24px] pr-2">
-                        Michel Picas
+<main>
+    <!-- Section 1 : Présentation et formation -->
+    <section class="bg-sable py-[60px]" aria-label="Présentation de M. Picas">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="flex flex-col lg:flex-row items-center gap-10">
+                    <!-- Image -->
+                    <div class="lg:w-1/3 flex justify-center">
+                        <picture>
+                            <source srcset="../../../assets/michel-portrait-zoom.webp" type="image/webp">
+                            <img src="../../../assets/michel-portrait-zoom.jpg" alt="Michel dans le désert"
+                                class="rounded-xl max-w-[275px] w-full h-auto object-cover shadow-lg border border-vert-sauge/40"
+                                loading="lazy" />
+                        </picture>
                     </div>
-                </div>
 
-                <!-- Image -->
-                <div class="lg:w-1/2 flex justify-center">
-                    <picture>
-                        <source srcset="../../../assets/michel-portrait-zoom.webp" type="image/webp">
-                        <img src="../../../assets/michel-portrait-zoom.jpg" alt="Michel dans le désert"
-                            class="rounded-xl max-w-[275px] w-full h-auto object-cover shadow-lg border border-vert-sauge/40"
-                            loading="lazy" />
-                    </picture>
+                    <!-- Texte -->
+                    <div class="lg:w-2/3 space-y-5 text-[17px] leading-relaxed">
+                        <h1 class="font-display text-[36px] md:text-[42px] text-vert-sauge font-bold text-center lg:text-left">
+                            Qui suis-je ?
+                        </h1>
+
+                        <p>
+                            J'ai une formation de <strong>Sophrologue et Hypnothérapeute</strong>, je suis également formé
+                            aux disciplines de <strong>Pilates, Stretching</strong> ainsi qu'en <strong>escalade</strong>.
+                        </p>
+
+                        <p>
+                            Je donne des cours en Hôpital Psychiatrique pour le personnel, en entreprise et en milieu associatif.
+                            J'affectionne particulièrement les cours que je dispense auprès des <strong>déficients visuels et aveugles</strong>,
+                            ils/elles m'ont apporté un regard différent sur moi-même, sur la vie. Je les en remercie avec gratitude.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <!-- Section 2 : Frise chronologique -->
+    <section class="bg-beige py-[50px]">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <h2 class="font-display text-[28px] text-vert-sauge font-bold text-center mb-10">
+                Mon parcours
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <!-- Timeline -->
+                <div class="relative">
+                    <!-- Ligne horizontale (desktop) / verticale (mobile) -->
+                    <div class="hidden md:block absolute top-6 left-0 right-0 h-1 bg-vert-sauge/30"></div>
+                    <div class="md:hidden absolute top-0 bottom-0 left-6 w-1 bg-vert-sauge/30"></div>
+
+                    <div class="grid md:grid-cols-5 gap-6 md:gap-4">
+                        <!-- Étape 1 -->
+                        <div class="relative flex md:flex-col items-start md:items-center text-center">
+                            <div class="w-12 h-12 md:w-12 md:h-12 bg-vert-sauge rounded-full flex items-center justify-center text-white text-xl z-10 shrink-0">
+                                🧘
+                            </div>
+                            <div class="ml-4 md:ml-0 md:mt-4">
+                                <p class="font-bold text-vert-sauge">Sophrologue</p>
+                                <p class="text-sm text-gray-600">Il y a 20 ans</p>
+                            </div>
+                        </div>
+
+                        <!-- Étape 2 -->
+                        <div class="relative flex md:flex-col items-start md:items-center text-center">
+                            <div class="w-12 h-12 md:w-12 md:h-12 bg-vert-sauge rounded-full flex items-center justify-center text-white text-xl z-10 shrink-0">
+                                🧗
+                            </div>
+                            <div class="ml-4 md:ml-0 md:mt-4">
+                                <p class="font-bold text-vert-sauge">Escalade</p>
+                                <p class="text-sm text-gray-600">Il y a 15 ans</p>
+                            </div>
+                        </div>
+
+                        <!-- Étape 3 -->
+                        <div class="relative flex md:flex-col items-start md:items-center text-center">
+                            <div class="w-12 h-12 md:w-12 md:h-12 bg-vert-sauge rounded-full flex items-center justify-center text-white text-xl z-10 shrink-0">
+                                🤸
+                            </div>
+                            <div class="ml-4 md:ml-0 md:mt-4">
+                                <p class="font-bold text-vert-sauge">Pilates</p>
+                                <p class="text-sm text-gray-600">Il y a 12 ans</p>
+                            </div>
+                        </div>
+
+                        <!-- Étape 4 -->
+                        <div class="relative flex md:flex-col items-start md:items-center text-center">
+                            <div class="w-12 h-12 md:w-12 md:h-12 bg-vert-sauge rounded-full flex items-center justify-center text-white text-xl z-10 shrink-0">
+                                🌀
+                            </div>
+                            <div class="ml-4 md:ml-0 md:mt-4">
+                                <p class="font-bold text-vert-sauge">Hypnothérapeute</p>
+                                <p class="text-sm text-gray-600">Formation complémentaire</p>
+                            </div>
+                        </div>
+
+                        <!-- Étape 5 -->
+                        <div class="relative flex md:flex-col items-start md:items-center text-center">
+                            <div class="w-12 h-12 md:w-12 md:h-12 bg-terracotta rounded-full flex items-center justify-center text-white text-xl z-10 shrink-0">
+                                🏜️
+                            </div>
+                            <div class="ml-4 md:ml-0 md:mt-4">
+                                <p class="font-bold text-vert-sauge">Instants Nomades</p>
+                                <p class="text-sm text-gray-600">Aujourd'hui</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 : La quête personnelle -->
+    <section class="bg-sable py-[50px]">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="max-w-4xl mx-auto space-y-6 text-[17px] leading-relaxed">
+                <h2 class="font-display text-[28px] text-vert-sauge font-bold text-center mb-6">
+                    Ma rencontre avec le désert
+                </h2>
+
+                <p>
+                    Dans une période de réflexion profonde quant à ce qui m'animait réellement dans la vie,
+                    je cherchais une porte pour m'extraire du quotidien dévastateur : le stress, le toujours plus,
+                    la réussite, le speed de chaque jour, courir, ne pas avoir de temps... en définitive, la fuite permanente !
+                </p>
+
+                <p>
+                    Comment redonner de la valeur à la vie, la mienne, ses lettres de noblesse, ce pourquoi je suis né ?
+                </p>
+
+                <p>
+                    Alors un matin, je me suis envolé vers le Maroc pour me rendre à <strong>M'Hamid el Ghizlane</strong>.
+                    Accompagné d'un guide/chamelier et d'un cuisinier, je suis parti faire un trek de 6 jours dans le désert.
+                </p>
+
+                <!-- Citation mise en avant -->
+                <blockquote class="border-l-4 border-terracotta bg-beige p-6 rounded-r-lg my-8">
+                    <p class="text-[22px] italic text-vert-sauge font-display">
+                        "Cela a été une révélation !!"
+                    </p>
+                </blockquote>
+
+                <p>
+                    Cette expérience, j'ai souhaité la partager, la vivre avec d'autres personnes.
+                    J'ai alors décidé de créer <strong>Instants Nomades</strong>, et pour ce faire,
+                    la vie a mis sur mon chemin <strong>Mélodie du désert</strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 : Mélodie du désert -->
+    <section class="bg-beige py-[50px]">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-sable p-8 rounded-lg">
+                    <h2 class="font-display text-[24px] text-vert-sauge font-bold mb-4">
+                        Mélodie du désert
+                    </h2>
+
+                    <div class="space-y-4 text-[17px] leading-relaxed">
+                        <p>
+                            Pour réaliser cette aventure, j'ai choisi les services de <strong>Mélodie du désert</strong>,
+                            en qui j'ai pu trouver des valeurs communes ainsi qu'une équipe d'accompagnants exceptionnels,
+                            tant par leur discrétion que dans leur accompagnement au quotidien.
+                        </p>
+
+                        <p>
+                            Issus du <strong>peuple Sahraoui</strong>, ils nous font vivre cette magie du désert. Merci à eux.
+                        </p>
+
+                        <p>
+                            Créé par <strong>Karen et Saïd</strong>, professionnels dans le domaine, avec une équipe
+                            formidablement humaine, une gentillesse sans nom. À ce jour, ils me permettent de transformer
+                            un rêve en réalité. Par eux, ce rêve a pris naissance !
+                        </p>
+
+                        <p class="text-right italic font-handwritten text-vert-sauge text-[24px] mt-6">
+                            Mille fois merci — Michel Picas
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5 : Boutons CTA + réseaux sociaux -->
+    <section class="bg-sable py-[50px]">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+            <!-- Deux boutons CTA -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                <a routerLink="/contact"
+                    class="inline-block bg-vert-sauge text-white px-8 py-3 rounded-full text-[18px] font-semibold hover:bg-terracotta transition-all duration-300">
+                    Me contacter
+                </a>
+                <a routerLink="/le-trek/programme"
+                    class="inline-block bg-vert-sauge text-white px-8 py-3 rounded-full text-[18px] font-semibold hover:bg-terracotta transition-all duration-300">
+                    Découvrir le programme
+                </a>
+            </div>
+
+            <!-- Lien Instagram -->
+            <div class="flex items-center justify-center gap-3">
+                <span class="text-[16px] text-gray-600">Suivez-moi sur</span>
+                <a href="https://www.instagram.com/michelpicas" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-vert-sauge hover:text-terracotta transition-colors"
+                    aria-label="Instagram de Michel Picas">
+                    <svg class="w-6 h-6 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M20.445 5h-8.891A6.559 6.559 0 0 0 5 11.554v8.891A6.559 6.559 0 0 0 11.554 27h8.891a6.56 6.56 0 0 0 6.554-6.555v-8.891A6.557 6.557 0 0 0 20.445 5zm4.342 15.445a4.343 4.343 0 0 1-4.342 4.342h-8.891a4.341 4.341 0 0 1-4.341-4.342v-8.891a4.34 4.34 0 0 1 4.341-4.341h8.891a4.342 4.342 0 0 1 4.341 4.341l.001 8.891z" />
+                        <path
+                            d="M16 10.312c-3.138 0-5.688 2.551-5.688 5.688s2.551 5.688 5.688 5.688 5.688-2.551 5.688-5.688-2.55-5.688-5.688-5.688zm0 9.163a3.475 3.475 0 1 1-.001-6.95 3.475 3.475 0 0 1 .001 6.95zM21.7 8.991a1.363 1.363 0 1 1-1.364 1.364c0-.752.51-1.364 1.364-1.364z" />
+                    </svg>
+                    <span class="font-semibold">&#64;michelpicas</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
