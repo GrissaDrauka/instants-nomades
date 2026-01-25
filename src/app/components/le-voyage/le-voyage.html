@@ -148,32 +148,19 @@
         </div>
     </section>
 
-    <section class="bg-beige py-[60px]" aria-label="Activités proposées pendant le séjour">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <h2 class="font-display text-[32px] text-vert-sauge font-bold text-center mb-[40px]">
+    <section class="bg-beige py-[50px]" aria-label="Activités proposées pendant le séjour">
+        <div class="max-w-screen-xl mx-auto px-4 text-center">
+            <h2 class="font-display text-[32px] text-vert-sauge font-bold mb-4">
                 Activités proposées
             </h2>
-
-            <div class="grid sm:grid-cols-2 gap-10 text-[18px] leading-relaxed">
-                <!-- Matin -->
-                <div class="space-y-4">
-                    <p>🌅 <strong>Au lever :</strong> salutation au soleil, stretching et postures de pilates</p>
-                    <p>🧘‍♂️ <strong>Avant la marche :</strong> courte méditation pour se centrer sur soi</p>
-                    <p>🚶 <strong>Pendant la marche :</strong> méditation libre autour d’un thème choisi ensemble</p>
-                    <p>🥗 <strong>Après le déjeuner :</strong> sieste ou relaxation profonde</p>
-                </div>
-
-                <!-- Fin de journée -->
-                <div class="space-y-4">
-                    <p>🌇 <strong>En fin de journée :</strong> moment de parole libre pour déposer ce qui a été vécu,
-                        partager ses émotions ou simplement écouter.</p>
-                    <p>🌌 <strong>Le soir :</strong> dîner suivi d’une soirée libre avec musiques, chants nomades, danse
-                        en pleine conscience et observation des étoiles.</p>
-                    <p>🧭 <strong>En milieu de trek :</strong> marche en pleine conscience organisée</p>
-                    <p>☀️ <strong>En cas de forte chaleur :</strong> adaptation du rythme – arrêt avant le déjeuner
-                        possible</p>
-                </div>
-            </div>
+            <p class="text-[18px] text-gray-700 mb-6 max-w-2xl mx-auto">
+                Pilates, méditation, marche en pleine conscience, soirées autour du feu...
+                Découvrez le programme détaillé d'une journée type.
+            </p>
+            <a routerLink="/le-trek/activites"
+                class="inline-block bg-vert-sauge text-white px-8 py-3 rounded-full text-[18px] font-semibold hover:bg-terracotta transition-all duration-300">
+                Voir les activités
+            </a>
         </div>
     </section>
 
@@ -234,64 +221,21 @@
                     <p><strong>Période :</strong><br> Séjours proposés de septembre à mai.</p>
                 </div>
 
-                <!-- Prochain départ -->
+                <!-- Prochains départs -->
                 <div class="flex items-start gap-4">
                     <span class="mt-1">🚀</span>
-                    <p><strong>Prochain départ :</strong><br> Du <strong>dimanche 26 octobre</strong> au <strong>samedi
-                            1er novembre 2025</strong>.</p>
+                    <p><strong>Prochains départs :</strong><br>
+                        <a routerLink="/le-trek/prochains-departs" class="text-vert-sauge underline hover:text-terracotta">
+                            Voir toutes les dates disponibles
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-beige py-[60px]" aria-label="Prestations incluses et non incluses">
-        <div class="max-w-screen-xl mx-auto px-4 text-[20px] leading-relaxed">
-            <div class="grid sm:grid-cols-2 gap-8 text-center">
-                <!-- Inclus -->
-                <div>
-                    <div class="flex items-center justify-center gap-4 mb-4">
-                        <div class="w-[40px] h-[40px]">
-                            <!-- Icône check -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
-                                <path fill="black"
-                                    d="M324,107.88,182.13,319.1a15.35,15.35,0,0,1-12.75,6.8H142.83a15.34,15.34,0,0,1-13.89-8.81L75.68,204a11.89,11.89,0,0,1,10.68-17l20.85-.15A11.89,11.89,0,0,1,118,193.45c13.16,26.54,34.8,71.29,38.44,85.85H158c4.52-16.44,88-133.48,125.07-185a11.86,11.86,0,0,1,9.65-4.94h21.38A11.9,11.9,0,0,1,324,107.88Z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-[24px] text-vert-sauge font-semibold mb-2">Ce qui est inclus :</h3>
-                    </div>
-                    <ul class="space-y-2 list-none">
-                        <li>Le transport aller/retour Marrakech – M’hamid</li>
-                        <li>L’encadrement par une équipe locale</li>
-                        <li>L’hébergement en bivouac</li>
-                        <li>Les repas et l’eau minérale</li>
-                        <li>Le matériel collectif (tentes, matelas...)</li>
-                        <li>Les dromadaires pour le portage</li>
-                    </ul>
-                </div>
-
-                <!-- Non inclus -->
-                <div>
-                    <div class="flex items-center justify-center gap-4 mb-4">
-                        <div class="w-[30px] h-[30px]">
-                            <!-- Icône croix -->
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14">
-                                <path
-                                    d="M14 1.225L12.775 0 7 5.775 1.225 0 0 1.225 5.775 7 0 12.775 1.225 14 7 8.225 12.775 14 14 12.775 8.225 7 14 1.225Z"
-                                    fill="black" />
-                            </svg>
-                        </div>
-                        <h3 class="text-[24px] text-vert-sauge font-semibold mb-2">Ce qui n’est pas inclus :</h3>
-                    </div>
-                    <ul class="space-y-2 list-none">
-                        <li>Les vols internationaux</li>
-                        <li>Les nuits à Marrakech</li>
-                        <li>Les boissons alcoolisées / sodas</li>
-                        <li>Le hammam (10 €)</li>
-                        <li>L’assurance personnelle</li>
-                    </ul>
-                </div>
-            </div>
-
+    <section class="bg-beige py-[60px]" aria-label="Galerie photos du désert">
+        <div class="max-w-screen-xl mx-auto px-4">
             <!-- Galerie : Ce qui vous attend -->
             <div class="mt-16">
                 <h3 class="font-display text-[26px] text-vert-sauge font-bold text-center mb-8">
