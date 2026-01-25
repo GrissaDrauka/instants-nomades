@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:github": "ng build -c github && powershell -Command \"Copy-Item dist/instants-nomades/browser/index.html dist/instants-nomades/browser/404.html -Force\" && npx angular-cli-ghpages --dir=dist/instants-nomades/browser"
   },
   "private": true,
   "dependencies": {

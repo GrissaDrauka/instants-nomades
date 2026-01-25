@@ -59,6 +59,27 @@
               "optimization": false,
               "extractLicenses": false,
               "sourceMap": true
+            },
+            "github": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.github.ts"
+                }
+              ],
+              "baseHref": "/instants-nomades/",
+              "outputHashing": "all"
+            },
+
+            "ovh": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.ovh.ts"
+                }
+              ],
+              "baseHref": "/",
+              "outputHashing": "all"
             }
           },
           "defaultConfiguration": "production"
@@ -71,6 +92,12 @@
             },
             "development": {
               "buildTarget": "instants-nomades:build:development"
+            },
+            "github": {
+              "buildTarget": "instants-nomades:build:github"
+            },
+            "ovh": {
+              "buildTarget": "instants-nomades:build:ovh"
             }
           },
           "defaultConfiguration": "development"
