@@ -1,0 +1,47 @@
+# Node modules
+node_modules/*
+
+# Angular build output
+dist/
+.angular/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Environment files
+.env
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+*.sw?
+
+# Tailwind/JIT cache
+.tailwind-cache/
+
+# Compiled output
+out-tsc/
+coverage/
+*.log
+
+# Angular local server state
+browser-sync-config.json
+
+# Optional: ignore generated files from ng generate
+*.bak
+
+# Optional: ignore routing JSONs or generated i18n files if used
+src/locale/messages.*.xlf
