@@ -2,7 +2,7 @@
     <section class="bg-sable py-[70px]">
         <div class="max-w-screen-xl mx-auto px-4">
             <!-- Header -->
-            <div class="text-center mb-10">
+            <div class="text-center mb-12">
                 <h1 class="font-display text-[36px] md:text-[42px] text-vert-sauge font-bold mb-4">
                     Me contacter
                 </h1>
@@ -11,9 +11,64 @@
                 </p>
             </div>
 
-            <!-- Formulaire centré -->
-            <div class="max-w-xl mx-auto bg-beige p-8 rounded-lg">
-                <app-contact-form></app-contact-form>
+            <!-- 2 colonnes : Formulaire + Infos voyageurs -->
+            <div class="max-w-5xl mx-auto flex flex-col lg:flex-row gap-8 items-stretch">
+
+                <!-- Colonne gauche : Formulaire -->
+                <div class="lg:w-1/2">
+                    <div class="bg-beige p-8 rounded-lg h-full">
+                        <h2 class="font-display text-[22px] text-vert-sauge font-bold mb-6">
+                            Envoyer un message
+                        </h2>
+                        <app-contact-form></app-contact-form>
+                    </div>
+                </div>
+
+                <!-- Colonne droite : Infos voyageurs -->
+                <div class="lg:w-1/2">
+                    <div class="bg-beige p-8 rounded-lg h-full">
+                        <p class="inline-flex items-center gap-2 bg-sable/70 text-vert-sauge font-semibold text-[17px] px-4 py-2 rounded-full mb-5">
+                            <span>⚠️</span>
+                            Après inscription
+                        </p>
+                        <h2 class="font-display text-[22px] text-vert-sauge font-bold mb-4">
+                            Informations à transmettre
+                        </h2>
+
+                        <p class="text-[15px] text-gray-600 mb-5">
+                            Merci de compléter ces informations et de les retourner par mail à
+                            <a href="mailto:picasmichel@gmail.com" class="text-vert-sauge underline hover:text-terracotta font-medium">picasmichel&#64;gmail.com</a>
+                            avant le départ.
+                        </p>
+
+                        <ul class="space-y-2 text-[15px] text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-vert-sauge">•</span>
+                                Copie du passeport (en cours de validité, pas de visa)
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-vert-sauge">•</span>
+                                Prénom, nom, date de naissance
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-vert-sauge">•</span>
+                                Téléphone pour le voyage
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-vert-sauge">•</span>
+                                Allergies / intolérances alimentaires
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-vert-sauge">•</span>
+                                Pathologie ou traitement en cours
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-vert-sauge">•</span>
+                                Niveau physique OK (4h/4h30 de marche par jour)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Coordonnées en ligne -->
@@ -55,39 +110,6 @@
                     class="inline-block bg-vert-sauge text-white px-8 py-3 rounded-full text-[18px] font-semibold hover:bg-terracotta transition-all duration-300">
                     Voir les tarifs & informations
                 </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Section : Après inscription -->
-    <section class="bg-beige py-[50px]">
-        <div class="max-w-screen-xl mx-auto px-4">
-            <div class="max-w-3xl mx-auto">
-                <div class="text-center mb-8">
-                    <span class="inline-block bg-vert-sauge/10 text-vert-sauge text-[14px] font-semibold px-4 py-1 rounded-full mb-3">
-                        Après inscription
-                    </span>
-                    <h2 class="font-display text-[26px] text-vert-sauge font-bold">
-                        Informations à transmettre
-                    </h2>
-                </div>
-
-                <div class="bg-sable p-6 rounded-lg">
-                    <p class="text-center text-[16px] text-gray-600 mb-6">
-                        Merci d'envoyer ces informations à
-                        <a href="mailto:picasmichel@gmail.com" class="text-vert-sauge underline hover:text-terracotta font-medium">picasmichel&#64;gmail.com</a>
-                        avant le départ.
-                    </p>
-
-                    <div class="grid md:grid-cols-2 gap-3 text-[15px]">
-                        <p>• Copie du passeport</p>
-                        <p>• Prénom, nom, date de naissance</p>
-                        <p>• Téléphone pour le voyage</p>
-                        <p>• Allergies / intolérances</p>
-                        <p>• Pathologie ou traitement</p>
-                        <p>• Niveau physique OK (4h/4h30 marche)</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
