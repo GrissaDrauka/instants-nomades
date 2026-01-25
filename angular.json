@@ -29,6 +29,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/404.html",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -89,6 +90,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
+              "src/404.html",
               {
                 "glob": "**/*",
                 "input": "public"
