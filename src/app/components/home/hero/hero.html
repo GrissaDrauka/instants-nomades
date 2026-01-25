@@ -1,18 +1,21 @@
-<section class="hero relative flex items-center justify-center text-center overflow-hidden"
-    aria-label="Bannière d’introduction">
-    <!-- Image avec overlay -->
-    <div class="absolute inset-0 z-0" aria-hidden="true">
-        <div class="h-full w-full bg-black/30"></div>
-    </div>
+<section
+  class="hero relative flex items-center justify-center text-center overflow-hidden"
+  aria-label="Bannière d’introduction"
+  [style.background-image]="'url(' + heroBgUrl + ')'"
+>
+  <div class="absolute inset-0 z-0" aria-hidden="true">
+    <div class="h-full w-full bg-black/30"></div>
+  </div>
 
-    <!-- Contenu au-dessus -->
-    <div class="hero-content relative z-10 text-blanc drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] px-4">
-        <h1 class="text-[48px] font-display text-terracotta font-bold mb-5">
-            Voyage intérieur au cœur du désert
-        </h1>
-        <a routerLink="/le-trek/programme"
-            class="btn inline-block bg-vert-sauge hover:bg-brun-leger text-blanc px-6 py-3 rounded-md text-lg font-sans transition-colors">
-            Explorer le programme complet
-        </a>
-    </div>
+  <div class="hero-content relative z-10 text-blanc drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)] px-4">
+    <h1 class="text-[48px] font-display text-terracotta font-bold mb-5">
+      Voyage intérieur au cœur du désert
+    </h1>
+    <a
+      routerLink="/le-trek/programme"
+      class="btn inline-block bg-vert-sauge hover:bg-brun-leger text-blanc px-6 py-3 rounded-md text-lg font-sans transition-colors"
+    >
+      Explorer le programme complet
+    </a>
+  </div>
 </section>
