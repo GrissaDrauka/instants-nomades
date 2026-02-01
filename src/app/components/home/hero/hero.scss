@@ -1,3 +1,8 @@
 .hero {
     @apply h-[500px] bg-cover bg-center bg-no-repeat;
+    background-image: url('/assets/home-mobile.jpg');
+
+    @media (min-width: 768px) {
+        background-image: url('/assets/home.jpg');
+    }
 }

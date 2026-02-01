@@ -7,6 +7,4 @@ import { RouterLink } from '@angular/router';
   templateUrl: './hero.html',
   styleUrls: ['./hero.scss'],
 })
-export class Hero {
-  heroBgUrl = 'assets/home.webp';
-}
+export class Hero {}

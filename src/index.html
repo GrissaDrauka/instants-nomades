@@ -32,8 +32,9 @@
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
 
-  <!-- Preload image hero pour LCP -->
-  <link rel="preload" as="image" href="assets/home.webp" type="image/webp">
+  <!-- Preload image hero pour LCP (mobile prioritaire) -->
+  <link rel="preload" as="image" href="assets/home-mobile.jpg" media="(max-width: 767px)">
+  <link rel="preload" as="image" href="assets/home.jpg" media="(min-width: 768px)">
 
   <!-- Données structurées JSON-LD -->
   <script type="application/ld+json">
