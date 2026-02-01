@@ -1,0 +1,10 @@
+# Robots.txt pour instants-nomades.fr
+
+User-agent: *
+Allow: /
+
+# Pages non indexables
+Disallow: /merci
+
+# Sitemap
+Sitemap: https://instants-nomades.fr/sitemap.xml

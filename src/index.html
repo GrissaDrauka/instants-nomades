@@ -10,14 +10,109 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
 
-  <!-- Affichage dans les aperçus (réseaux sociaux) -->
-  <meta property="og:title" content="Instants Nomades – Reconnexion dans le désert" />
+  <!-- URL canonique -->
+  <link rel="canonical" href="https://instants-nomades.fr/">
+
+  <!-- Open Graph (Facebook, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Instants Nomades" />
+  <meta property="og:title" content="Instants Nomades – Trek désert Maroc & reconnexion" />
   <meta property="og:description"
-    content="Voyages initiatiques dans le désert marocain : yoga, marche, partage, silence. Une expérience unique au cœur du Sahara." />
+    content="Trek de 7 jours dans le désert marocain : sophrologie, Pilates, immersion culturelle. Une expérience unique au cœur du Sahara." />
   <meta property="og:image" content="https://instants-nomades.fr/assets/og-cover.png" />
   <meta property="og:url" content="https://instants-nomades.fr" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Instants Nomades – Trek désert Maroc" />
+  <meta name="twitter:description" content="Trek de 7 jours dans le désert marocain avec sophrologie et Pilates. 780€ tout compris." />
+  <meta name="twitter:image" content="https://instants-nomades.fr/assets/og-cover.png" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+  <!-- Données structurées JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://instants-nomades.fr/#organization",
+        "name": "Instants Nomades",
+        "url": "https://instants-nomades.fr",
+        "logo": "https://instants-nomades.fr/assets/logo.png",
+        "description": "Trek et séjours de reconnexion dans le désert marocain",
+        "founder": {
+          "@type": "Person",
+          "name": "Michel Picas",
+          "jobTitle": "Sophrologue, Hypnothérapeute, Professeur de Pilates"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "reservations",
+          "email": "instants.nomades@orange.fr"
+        },
+        "sameAs": [
+          "https://www.instagram.com/instants_nomades_trek/",
+          "https://www.facebook.com/profile.php?id=61575389832016"
+        ]
+      },
+      {
+        "@type": "TouristTrip",
+        "@id": "https://instants-nomades.fr/#trek",
+        "name": "Trek dans le désert marocain - 7 jours",
+        "description": "Trek de 7 jours et 6 nuits dans le désert marocain avec sophrologie, Pilates, méditation et immersion culturelle auprès des nomades.",
+        "url": "https://instants-nomades.fr/le-trek/programme",
+        "touristType": ["Bien-être", "Aventure", "Nature", "Spiritualité"],
+        "provider": {
+          "@id": "https://instants-nomades.fr/#organization"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "780",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "validFrom": "2026-01-01",
+          "priceValidUntil": "2027-12-31",
+          "description": "Trek 7 jours / 6 nuits tout compris : transport, hébergement, repas, activités bien-être"
+        },
+        "itinerary": {
+          "@type": "ItemList",
+          "numberOfItems": 7,
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Jour 1 - Marrakech vers le désert"},
+            {"@type": "ListItem", "position": 2, "name": "Jour 2 - Premier pas dans les dunes"},
+            {"@type": "ListItem", "position": 3, "name": "Jour 3 - Marche et méditation"},
+            {"@type": "ListItem", "position": 4, "name": "Jour 4 - Rencontre avec les nomades"},
+            {"@type": "ListItem", "position": 5, "name": "Jour 5 - Sophrologie dans le désert"},
+            {"@type": "ListItem", "position": 6, "name": "Jour 6 - Dernier bivouac"},
+            {"@type": "ListItem", "position": 7, "name": "Jour 7 - Retour à Marrakech"}
+          ]
+        },
+        "contentLocation": {
+          "@type": "Place",
+          "name": "Désert du Sahara, Maroc",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "M'Hamid El Ghizlane",
+            "addressCountry": "MA"
+          }
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://instants-nomades.fr/#website",
+        "url": "https://instants-nomades.fr",
+        "name": "Instants Nomades",
+        "publisher": {
+          "@id": "https://instants-nomades.fr/#organization"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 
 <body>
